@@ -24,7 +24,7 @@ contract MortsPrivy is PERC20 {
         _mint(msg.sender, _amount * 50 ** decimals());
     }
 
-    // this function is to transfer tokens to any address   
+    // this function is to transfer tokens to any address or from one address to the other   
     function transfer(address _to, uint256 _amount) public override returns (bool) {
         _transfer(msg.sender, _to, _amount * 10 ** decimals());
         return true;
