@@ -19,7 +19,7 @@ contract MortsPrivy is PERC20 {
         _mint(msg.sender, 50 * 10 ** decimals());
     }
 
-    // this function mint tokens to any address that call this function
+    // this function mint tokens to any address that call this function to mint
     function mint(uint256 _amount) public {
         _mint(msg.sender, _amount * 50 ** decimals());
     }
