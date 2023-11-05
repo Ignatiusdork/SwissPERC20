@@ -1,5 +1,5 @@
 const { ethers } = require("hardhat");
-// Deploy the contract
+// Deploy the contract of the token
 async function main() {
   const perc20 = await ethers.deployContract("MortsPrivy");
   await perc20.waitForDeployment();
